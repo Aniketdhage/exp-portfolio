@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/undraw_feeling_proud_qne1.svg";
+// import headerImg from "../assets/img/header-img.svg";
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(0.1 - Math.random() * 100);
-  const toRotate = [
-    "Web Developer",
-    "Front End Developer",
-    "ReactJS Developer",
-  ];
+  const toRotate = ["Web Developer", "FrontEnd Developer", "ReactJS Developer"];
   const period = 200;
 
   useEffect(() => {

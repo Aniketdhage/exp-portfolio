@@ -41,11 +41,11 @@ const Project = () => {
     },
   ];
   return (
-    <section>
+    <section className="project" id="#projects">
       <Container>
         <Row>
-          <Col>
-            <h1>Projects</h1>
+          <Col size={12}>
+            <h2>Projects</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
               enim quod corrupti totam, tempora odio, nesciunt minima nobis ut
@@ -54,8 +54,13 @@ const Project = () => {
               Repudiandae odit minima, asperiores officia libero fuga sequi
               maxime ut sint ex nisi nihil!
             </p>
-            <Tab.Container id="projects-tab" defaultActiveKey="first">
-              <Nav variant="pills" defaultActiveKey="/home">
+            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+              <Nav
+                variant="pills"
+                className="nav-pills mb-5 justify-content-center align-items-center"
+                id="pills-tab"
+                defaultActiveKey="/home"
+              >
                 <Nav.Item>
                   <Nav.Link eventKey="first">Tab One</Nav.Link>
                 </Nav.Item>
@@ -66,7 +71,7 @@ const Project = () => {
                   <Nav.Link eventKey="Third">Tab Three</Nav.Link>
                 </Nav.Item>
               </Nav>
-              <Tab.Content>
+              <Tab.Content id="slideInUp">
                 <Tab.Pane eventKey="first">
                   <Row>
                     {projects.map((project, key) => {
@@ -74,6 +79,8 @@ const Project = () => {
                     })}
                   </Row>
                 </Tab.Pane>
+                <Tab.Pane eventKey="second"></Tab.Pane>
+                <Tab.Pane eventKey="third"></Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

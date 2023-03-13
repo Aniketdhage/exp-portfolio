@@ -25,7 +25,8 @@ const Contact = () => {
         status: false,
         message: "Sorry! this service temporery not available",
       });
-    }, 2000);
+    }, 1000);
+    alert("Sorry! this service temporery not available");
   };
   return (
     <section className="contact" id="connect">

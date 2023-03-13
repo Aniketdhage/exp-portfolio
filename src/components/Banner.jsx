@@ -53,12 +53,13 @@ function Banner() {
               {`Hi I'm `} <span className="wrap">{text}</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-              laudantium ex porro, distinctio ratione ut, officia quam sapiente
-              sunt recusandae quas, aliquam id veniam hic repudiandae quos
-              reiciendis velit odit voluptas. Optio suscipit saepe officiis
-              omnis, magnam fuga sit hic ipsam impedit recusandae facilis iusto
-              temporibus illum, quo iste molestias.
+              To work in an organization, which provides me good learning
+              opportunities, where in I can improve my technical skills and
+              thereby to contribute in the growth of the organization. My goal
+              is that I would be able to apply the knowledge, ideas and
+              creativity gained through education and experience in the field of
+              Information Technology so as to add value to myself and ultimately
+              society at large.
             </p>
             <button onClick={() => console.log("connect")}>
               Let's Connect <ArrowRightCircle size={25} />

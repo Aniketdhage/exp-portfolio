@@ -1,58 +1,60 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import { Container, Row, Col, Tab } from "react-bootstrap";
-import projImg1 from "./../assets/img/project-img1.png";
-import projImg2 from "./../assets/img/project-img2.png";
-import projImg3 from "./../assets/img/project-img3.png";
+import projImg1 from "./../assets/img/filmy house.png";
+// import projImg1 from "./../assets/img/project-img1.png";
+import projImg2 from "./../assets/img/smart design.png";
+// import projImg2 from "./../assets/img/project-img2.png";
+import projImg3 from "./../assets/img/smart tube.png";
+import projImg4 from "./../assets/img/smart dashboard.png";
+// import projImg3 from "./../assets/img/project-img3.png";
 import colorSharp2 from "./../assets/img/color-sharp2.png";
 import ProjectCard from "./ProjectCard";
 
 const Project = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
+      title: "Modern Design",
       description: "Design & Development",
       imgUrl: projImg2,
+      liveUrl: "https://smart-design-aniket.netlify.app",
+      githubUrl: "https://github.com/Aniketdhage/smart-web-design-reactjs",
     },
     {
-      title: "Business Startup",
+      title: "Smart Tube",
       description: "Design & Development",
       imgUrl: projImg3,
+      liveUrl: "https://smart-tube-aniket.netlify.app",
+      githubUrl: "https://github.com/Aniketdhage/smart-tube-react",
     },
     {
-      title: "Business Startup",
+      title: "Smart Dashboard",
+      description: "Design & Development",
+      imgUrl: projImg4,
+      liveUrl: "https://dashboardbyaniket.netlify.app/",
+      githubUrl: "https://github.com/Aniketdhage/smart-dashboard",
+    },
+    {
+      title: "Filmy House",
       description: "Design & Development",
       imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      liveUrl: "https://aniketdhage.github.io/moviesbydhage/#/",
+      githubUrl: "https://github.com/Aniketdhage/moviesbydhage",
     },
   ];
   return (
-    <section className="project" id="#projects">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
             <h2>Projects</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              enim quod corrupti totam, tempora odio, nesciunt minima nobis ut
-              facilis delectus sit blanditiis ducimus aperiam quas repellendus
-              maxime quam quidem sunt illum maiores voluptatibus dicta rem.
-              Repudiandae odit minima, asperiores officia libero fuga sequi
-              maxime ut sint ex nisi nihil!
+              The most important part of any project is planning. It instructs
+              organizations, partners, and project managers on how to proceed
+              with the remaining phases of the project. It promotes goal
+              differentiation, the avoidance of missed deadlines, the reduction
+              of risks, the prioritizing of fundamental exercises, and the
+              delivery of desired outcomes.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
@@ -68,7 +70,7 @@ const Project = () => {
                   <Nav.Link eventKey="second">Tab Two</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="Third">Tab Three</Nav.Link>
+                  <Nav.Link eventKey="third">Tab Three</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content id="slideInUp">
@@ -79,8 +81,25 @@ const Project = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second"></Tab.Pane>
-                <Tab.Pane eventKey="third"></Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <Row>
+                    <Col size={12} sm={12} md={12}>
+                      <h1 style={{ textAlign: "center", margin: "8rem 0px" }}>
+                        More Projects <span>Coming Soon</span>
+                      </h1>
+                    </Col>
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  {" "}
+                  <Row>
+                    <Col size={12} sm={12} md={12}>
+                      <h1 style={{ textAlign: "center", margin: "8rem 0px" }}>
+                        More Projects <span>Coming Soon</span>
+                      </h1>
+                    </Col>
+                  </Row>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

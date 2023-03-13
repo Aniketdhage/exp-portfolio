@@ -1,5 +1,7 @@
 import meter1 from "../assets/img/undraw_react_re_g3ui.svg";
+import round from "../assets/img/round-svgrepo-com.svg";
 import meter2 from "../assets/img/meter2.svg";
+import git from "../assets/img/git-icon-logo-svgrepo-com.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -35,39 +37,39 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
-              </p>
+              <p>Skill and confidence are an unconquered army.</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={round} alt="Image" />
                   <h5>Reactjs</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={round} alt="Image" />
                   <h5>HTML5</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
+                  <img src={round} alt="Image" />
                   <h5>CSS3</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={round} alt="Image" />
                   <h5>JavaScript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={round} alt="Image" />
                   <h5>Bootstrap</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={round} alt="Image" />
                   <h5>Git</h5>
+                </div>
+                <div className="item">
+                  <img src={round} alt="Image" />
+                  <h5>Tailwind CSS</h5>
                 </div>
               </Carousel>
             </div>
